@@ -1,4 +1,4 @@
-# Django settings for fisiorapiaame project.
+# Django settings for fisioterapiaame project.
 
 DEBUG = True
 TEMPLATE_DEBUG = DEBUG
@@ -63,7 +63,7 @@ MIDDLEWARE_CLASSES = (
     'django.contrib.auth.middleware.AuthenticationMiddleware',
 )
 
-ROOT_URLCONF = 'fisiorapiaame.urls'
+ROOT_URLCONF = 'fisioterapiaame.urls'
 
 TEMPLATE_DIRS = (
     # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
