@@ -12,9 +12,11 @@ class PacienteAdmin(admin.ModelAdmin):
            {'fields': ('nome', 'sexo', 'data_nascimento', 'email')}
         ),
         (u'Endereco',
-           {'fields': ('endereco', 'complemento', 'bairro', 'municipio', 'estado', 'cep', 'telefone', 'celular')}
+           {'fields': ('endereco', 'complemento', 'bairro', 'municipio', 'estado', 'cep', 'telefone', 'celular'), 
+            'classes': ['collapse']}
         ),
      )
-
+    
+        
 admin.site.register(Paciente, PacienteAdmin)
 
