@@ -1,0 +1,5 @@
+/* ---- fonts 0.2 ---- */
+body {font:x-small arial,helvetica,freesans,sans-serif;}
+select, input, textarea, button {font:0.99em arial,helvetica,freesans,sans-serif;}
+pre, code {font:1.15em monospace;}
+#cma-doc {font-size:1.2em;}

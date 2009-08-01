@@ -1,0 +1,110 @@
+/* GRID */
+#cma-banner,#cma-topo,#cma-doc {width:100%;clear:both;}
+#cma-corpo {margin:0 auto 4em auto;min-width:980px;text-align:left;width:81.665em;}
+#cma-principal {float:right;min-width:824px;width:68.665em;}
+#cma-menu {float:left;margin-right:0.665em;min-width:148px;width:12.335em;}
+#cma-lateral {float:right;min-width:200px;width:16.665em;}
+#cma-rodape {background:#f5f5f5;padding:2em 0;text-align:center;}
+.cma-unit {float:left;margin-right:0.665em;padding:0 0.585em;}
+
+/* SEM LATERAL E MENU */
+.cma-bloco {width:980px;}
+
+/* COM LATERAL */
+.cma-bloco-com-lateral {min-width:980px;width:81.665em;}
+.cma-bloco-com-lateral .cma-bloco {float:left;min-width:780px;width:65em;}
+
+/* COM MENU */
+#cma-principal .cma-bloco {min-width:824px;width:68.665em;}
+
+/* COM LATERAL E MENU */
+#cma-principal .cma-bloco-com-lateral {min-width:824px;width:68.665em;}
+#cma-principal .cma-bloco-com-lateral .cma-bloco {float:left;min-width:624px;width:52em;}
+
+/* UNITS */
+.cma-grid-a .cma-unit {float:none;margin-right:0;min-width:602px;width:50.165em;}
+.cma-grid-b .cma-unit {min-width:290px;width:24.165em;}
+.cma-grid-c .cma-unit {min-width:186px;width:15.5em;}
+.cma-grid-d .cma-unit {min-width:134px;width:11.165em;}
+.cma-grid-e .cma-unit {min-width:134px;width:11.165em;}
+.cma-grid-f .cma-unit {min-width:82px;width:6.835em;}
+.cma-grid-g .cma-unit {min-width:238px;width:19.835em;}
+.cma-grid-h .cma-unit {min-width:134px;width:11.165em;}
+.cma-grid-i .cma-unit {float:none;margin-right:0;min-width:817px;padding-right:0;width:68.085em;}
+.cma-grid-j .cma-unit {margin-right:0;min-width:765px;padding-left:0;width:63.75em;}
+.cma-grid-k .cma-unit {display:block;float:none;margin-right:0;padding:0;}
+.cma-grid-l .cma-unit {min-width:186px;width:15.5em;}
+.cma-grid-m .cma-unit {min-width:394px;width:32.835em;}
+.cma-grid-n .cma-unit {min-width:498px;width:41.425em;}
+.cma-grid-o .cma-unit {min-width:186px;width:15.5em;}
+
+/* UNITS VARIADOS */
+.cma-grid-e .cma-primeiro {min-width:290px;width:24.165em;}
+.cma-grid-n .cma-ultimo {min-width:290px;width:24.165em;}
+.cma-grid-o .cma-ultimo {min-width:394px;width:32.835em;}
+.cma-ultimo {margin-right:0;}
+
+/* CLEARS */
+#cma-corpo:after,#cma-menu:after,#cma-lateral:after,.cma-bloco-com-lateral:after,.cma-grid-a:after,
+.cma-grid-b:after,.cma-grid-c:after,.cma-grid-d:after,.cma-grid-e:after,.cma-grid-f:after,.cma-grid-g:after,
+.cma-grid-h:after,.cma-grid-i:after,.cma-grid-j:after,.cma-grid-k:after {content:".";display:block;height:0;clear:both;visibility:hidden;}
+
+/*  /cma-UI/css/cma-base/v2/cma-03-grid-alternativo.css  */
+
+.cma-alternativo-a #cma-lateral {min-width:252px;width:21em;}
+.cma-alternativo-a .cma-bloco-com-lateral .cma-bloco {min-width:720px;width:60em;}
+.cma-alternativo-a .cma-unit {padding:0}
+
+.cma-grid-a .cma-unit {min-width:706px !important;width:58.83em !important;}
+
+/*  /cma-UI/css/cma-base/v2/cma-grid-futpedia.css  */
+
+/* GRID */
+#cma-banner,#cma-topo,#cma-doc {width:100%;clear:both;}
+.cma-corpo {margin:0 auto;min-width:980px;text-align:left;width:81.665em;}
+#cma-principal {float:right;min-width:824px;width:68.665em;}
+#cma-menu {float:left;margin-right:0.665em;min-width:148px;width:12.335em;}
+#cma-lateral {float:right;min-width:200px;width:16.665em;}
+.cma-unit {float:left;margin-right:0.665em;padding:0 0.585em;}
+
+/* SEM LATERAL E MENU */
+.cma-bloco {width:980px;}
+
+/* COM LATERAL */
+.cma-bloco-com-lateral {min-width:980px;width:81.665em;}
+.cma-bloco-com-lateral .cma-bloco {float:left;min-width:780px;width:65em;}
+
+/* COM MENU */
+#cma-principal .cma-bloco {min-width:824px;width:68.665em;}
+
+/* COM LATERAL E MENU */
+#cma-principal .cma-bloco-com-lateral {min-width:824px;width:68.665em;}
+#cma-principal .cma-bloco-com-lateral .cma-bloco {float:left;min-width:624px;width:52em;}
+
+/* UNITS */
+.cma-grid-a .cma-unit {float:none;margin-right:0;min-width:602px;width:50.165em;}
+.cma-grid-b .cma-unit {min-width:290px;width:24.165em;}
+.cma-grid-c .cma-unit {min-width:186px;width:15.5em;}
+.cma-grid-d .cma-unit {min-width:134px;width:11.165em;}
+.cma-grid-e .cma-unit {min-width:134px;width:11.165em;}
+.cma-grid-f .cma-unit {min-width:82px;width:6.835em;}
+.cma-grid-g .cma-unit {min-width:238px;width:19.835em;}
+.cma-grid-h .cma-unit {min-width:134px;width:11.165em;}
+.cma-grid-i .cma-unit {float:none;margin-right:0;min-width:817px;padding-right:0;width:68.085em;}
+.cma-grid-j .cma-unit {margin-right:0;min-width:765px;padding-left:0;width:63.75em;}
+.cma-grid-k .cma-unit {display:block;float:none;margin-right:0;padding:0;}
+.cma-grid-l .cma-unit {min-width:186px;width:15.5em;}
+.cma-grid-m .cma-unit {min-width:394px;width:32.835em;}
+.cma-grid-n .cma-unit {min-width:498px;width:41.425em;}
+.cma-grid-o .cma-unit {min-width:186px;width:15.5em;}
+
+/* UNITS VARIADOS */
+.cma-grid-e .cma-primeiro {min-width:290px;width:24.165em;}
+.cma-grid-n .cma-ultimo {min-width:290px;width:24.165em;}
+.cma-grid-o .cma-ultimo {min-width:394px;width:32.835em;}
+.cma-ultimo {margin-right:0;}
+
+/* CLEARS */
+.cma-corpo:after,#cma-menu:after,#cma-lateral:after,.cma-bloco-com-lateral:after,.cma-grid-a:after,
+.cma-grid-b:after,.cma-grid-c:after,.cma-grid-d:after,.cma-grid-e:after,.cma-grid-f:after,.cma-grid-g:after,
+.cma-grid-h:after,.cma-grid-i:after,.cma-grid-j:after,.cma-grid-k:after {content:".";display:block;height:0;clear:both;visibility:hidden;}

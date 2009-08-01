@@ -1,0 +1,36 @@
+<div id="cma-barra">
+    <div id="cma-topo">
+        <ul class="conteudo-topo">
+            <li class="cma-logo">
+                <div class="cma-logo-conteudo">
+                </div>
+            </li>
+            <li class="ultimo">
+                {% if user.is_authenticated %}
+				<div id="cma-dados-perfil">
+					<p>
+                       <a href="#" id="link_usuario"><strong>Olá, {{ user }}</strong></a>
+                    </p>
+					<div id="cma-logout"><p><a href="/admin/logout/">Sair do cma</a></p></div>
+                </div>
+                {% endif %}
+            </li>
+        </ul>
+        <ul id="menu_usuario" class="menu-dropdown">
+            <li>
+                <p>
+                    <a href="/admin/password_change/" id="alterar_senha">Alterar a senha</a>
+                </p>
+            </li>
+        </ul>
+    </div>
+</div>
+<div id="cma-menu-favoritos">
+    	<div class="favoritos">
+            <div class="primario">
+            	<div class="pagina-inicial">
+            		<a href="{% url home_admin %}" title="Página inicial" class="home">Página inicial</a>
+            	</div>
+        	</div>
+        </div>
+</div>

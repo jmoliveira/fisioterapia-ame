@@ -1,0 +1,32 @@
+#cma-menu-favoritos {border-top:solid 1px #2874C8;background:#f0f0f0 url(/media/img/sistema/favoritos_bg_barra.gif) repeat-x;overflow:hidden;text-align:left;width:100%;}
+#cma-menu-favoritos * {vertical-align:middle}							
+#cma-menu-favoritos .favoritos {margin:0 auto;width:980px;overflow:hidden;}
+#cma-menu-favoritos .favoritos a {color:#b5d3ef; font-size: 0.9em;}
+#cma-menu-favoritos .favoritos a:hover {color:white;}
+#cma-menu-favoritos .tooltip-favoritos {display:none;}
+#cma-menu-favoritos .tooltip-favoritos {position:absolute;width:22px;height:20px;border:0;margin-left:-1px;*margin-top:-2px;z-index:101;}
+#cma-menu-favoritos .tooltip-favoritos img {margin:0;padding:0;}
+#cma-menu-favoritos .pagina-inicial {float:left;} 
+#cma-menu-favoritos .pagina-inicial a {background: url('/media/img/icones/icones.png') no-repeat -20px -510px;padding: 4px 0 4px 25px;} 
+
+#cma-menu-favoritos .primario {width:100%;overflow:hidden;padding-bottom:0.17em;height:23px;padding:7px 0 0 0;}
+#cma-menu-favoritos .primario .estrela {margin-left: 8px;float:left;height:24px;padding-left: 24px;background:url('/media/img/admin/cma_navegacao_corner.gif') left bottom no-repeat;}
+
+#cma-menu-favoritos .primario ul.menu-favoritos-primario {padding-top:0.17em;float:left;}
+#cma-menu-favoritos .primario ul.menu-favoritos-primario li {float:left;background:url(/media/img/sistema/favoritos_separador.gif) no-repeat left 5px}
+#cma-menu-favoritos .primario ul.menu-favoritos-primario a {color:#006cee;display:block;line-height:16px;margin-left:0.25em;padding:2px 14px 2px 14px;*white-space:nowrap;}
+#cma-menu-favoritos .primario ul.menu-favoritos-primario li.box-on a {background-color:#fff;border:solid 1px #358cf3;padding:1px 13px 1px 13px}
+#cma-menu-favoritos .primario ul.menu-favoritos-primario span {font-size:0.915em}		
+		
+#cma-menu-favoritos .secundario {position:absolute;margin:0 0 0 655px;background-color:#f5f5f5;border:solid 1px #ccc;padding:1.25em 4.5em 1em 1.25em;overflow:hidden;width:254px;z-index:100;}		
+#cma-menu-favoritos .secundario ul.menu-favoritos-secundario li {clrar:both;overflow:hidden;width:100%;display:block;border:solid 1px;border-color:#e1e1e1 #f5f5f5 #f5f5f5 #f5f5f5;padding:2px 8px 1px 8px;margin-bottom:1px;}
+#cma-menu-favoritos .secundario ul.menu-favoritos-secundario a {color:#006cee;display:block;}
+#cma-menu-favoritos .secundario ul.menu-favoritos-secundario li.box-on {background-color:#fff;border:solid 1px #358cf3;}
+#cma-menu-favoritos .secundario ul.menu-favoritos-secundario span {font-size:0.915em}
+
+#cma-menu-favoritos ul.menu-favoritos-primario .box-on {border:0 solid #fff !important}
+
+/* Personalizando Popin Favoritos */
+.cma-menu-favorites-add {width:320px;;height:185px}
+.cma-menu-favorites-add .cma-node-name {padding:0.66em 0;overflow:hidden;border-bottom-color:#E6E6E6;border-left-color:#CCCCCC;border-top-color:#999999;border-width:1px;color:#333333;height:1.5em;width:100%}
+.cma-menu-favorites-add label {font-size:0.75em;color:#666;letter-spacing:0;} 

@@ -1,0 +1,56 @@
+.dashboard-app {
+    margin-bottom: 2em;
+}
+
+.dashboard-app .app-topo {
+    background:url("/media/img/admin/bkgs_agrupamentos.png") no-repeat 0 0;
+}
+
+.dashboard-app .app-topo h3 {
+    /*background:url("/media/img/admin/dashboard_marcas.png") no-repeat 14px 14px;*/
+    border-bottom:1px solid #ddd;
+    color:#333;
+    font-size:2em;
+    font-weight:normal;
+    letter-spacing:-1px;
+    margin:0 2px;
+    padding:0.6em;
+}
+.dashboard-app .app-item {
+    color:#0166FF;
+    display:inline-block;
+    font-size:1.33em;
+    font-weight:bold;
+    float:left;
+    margin-top:13px;
+}
+
+.dashboard-app .form-btn {
+    float:right;
+    margin-top:10px;
+}
+
+.dashboard-app .app-conteudo {
+    background:url("/media/img/admin/bkgs_agrupamentos.png") no-repeat 0 bottom;  
+    padding:0 1.33em;
+}
+
+.dashboard-app .app-conteudo li {
+    border-bottom:1px solid #ddd;
+    height: 4em;
+    overflow: auto;
+}
+
+.dashboard-app .app-conteudo li:last-child {
+    border-bottom:0;
+    padding:0 0 0.3em 0;
+}
+
+/* Produto - Geral */
+#geral .app-topo h3 {
+    background:url("/media/img/admin/dashboard_marcas.png") no-repeat 14px -89px;
+}
+
+#geral .app-conteudo {
+    background:url("/media/img/admin/bkgs_agrupamentos.png") no-repeat 0 -732px;  
+}

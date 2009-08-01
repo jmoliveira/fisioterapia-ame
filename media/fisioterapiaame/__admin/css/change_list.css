@@ -1,0 +1,325 @@
+/* CHANGELISTS */
+
+#changelist {
+    position: relative;
+    width: 100%;
+}
+
+#changelist table {
+    width: 100%;
+}
+
+.change-list .filtered {
+    min-height: 400px;
+}
+
+
+.change-list .filtered table tbody th {
+    padding-right: 1em;
+}
+
+#changelist .toplinks {
+    border-bottom: 1px solid #ccc !important;
+}
+
+#changelist .paginator {
+    color: #666;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+    overflow: hidden;
+}
+
+
+/* CHANGELIST TABLES */
+
+#changelist table thead th {
+    padding: 5px 10px;
+    white-space: nowrap;
+    vertical-align: middle;
+}
+
+#changelist table thead th:first-child {
+    width: 1.5em;
+    text-align: center;
+}
+
+#changelist table tbody th {
+    padding: 15px 10px;
+    vertical-align:middle;
+}
+
+#changelist table tbody td {
+    padding: 15px 10px;
+    vertical-align: middle;
+}
+
+#changelist table tbody td:first-child {
+    border-left: 0;
+    text-align: center;
+}
+
+#changelist table tfoot {
+    color: #666;
+}
+
+/* TOOLBAR */
+
+#changelist #toolbar {
+    padding: 1.33em;
+    border: 1px solid #ddd;
+    background: #f7f7f7;
+    color: #666;
+    margin-bottom: 2em;
+}
+
+#changelist #toolbar form input[type="submit"] {
+    background: url(/media/img/botoes.png) -16px -215px no-repeat;
+    border:0;
+    height:34px;
+    width:86px;
+    text-indent:-9999px;
+}
+
+#changelist #toolbar form #searchbar {
+    background: #fff url(/media/img/icones.png) no-repeat 0 0;
+    background-position: -15px -13px;
+    margin-right: 6px;
+    padding: 5px 5px 5px 26px;
+}
+
+#changelist #changelist-search img {
+    display: none;
+}
+
+/* FILTER COLUMN */
+
+#changelist-filter {
+    background: #f1f1f1;
+    border:1px solid #ccc;
+    display:none;
+    position: absolute;
+    right: 0;
+    top:123px;
+    z-index: 1000;
+    width: 160px;
+
+}
+
+#changelist-filter h2 {
+    display:none;
+}
+
+#changelist-filter h3 {
+    font-size: 12px;
+    margin-bottom: 0;
+}
+
+#changelist-filter ul {
+    padding-left: 0;
+    margin-left: 10px;
+}
+
+#changelist-filter li {
+    list-style-type: none;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+#changelist-filter a {
+    color: #999;
+}
+
+#changelist-filter a:hover {
+    color: #338cf2;
+}
+
+#changelist-filter li.selected {
+    border-left: 5px solid #ccc;
+    padding-left: 5px;
+    margin-left: -10px;
+}
+
+#changelist-filter li.selected a {
+    color: #0066ff !important;
+}
+
+/* DATE DRILLDOWN */
+
+.change-list ul.toplinks {
+    display: block;
+    background: white url(/admin_media/img/admin/nav-bg-reverse.gif) 0 -10px repeat-x;
+    border-top: 1px solid white;
+    float: left;
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100%;
+}
+
+.change-list ul.toplinks li {
+    float: left;
+    width: 9em;
+    padding: 3px 6px;
+    font-weight: bold;
+    list-style-type: none;
+}
+
+.change-list ul.toplinks .date-back a {
+    color: #999;
+}
+
+.change-list ul.toplinks .date-back a:hover {
+    color: #036;
+}
+
+/* PAGINATOR */
+
+.paginator {
+    font-size: 11px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    line-height: 22px;
+    margin: 0;
+    border-top: 1px solid #ddd;
+}
+
+.paginator a:link, .paginator a:visited {
+    padding: 2px 6px;
+    border: solid 1px #ccc;
+    background: white;
+    text-decoration: none;
+}
+
+.paginator a.showall {
+    padding: 0 !important;
+    border: none !important;
+}
+
+.paginator a.showall:hover {
+    color: #036 !important;
+    background: transparent !important;
+}
+
+.paginator .end {
+    border-width: 2px !important;
+    margin-right: 6px;
+}
+
+.paginator .this-page {
+    padding: 2px 6px;
+    font-weight: bold;
+    font-size: 13px;
+    vertical-align: top;
+}
+
+.paginator a:hover {
+    color: white;
+    background: #5b80b2;
+    border-color: #036;
+}
+
+/* ACTIONS */
+
+#changelist .actions {
+    background: #f1f1f1;
+    border:1px solid #ccc;
+    color: #333;
+    display:none;
+    font-size:11px;
+    padding:8px 0 6px 0;
+    position: absolute;
+    top: 124px;
+}
+
+#changelist .actions:last-child {
+    border-bottom: none;
+}
+
+#changelist .actions select {
+    border: 1px solid #aaa;
+    margin: 0 0.5em;
+    padding: 1px 2px;
+}
+
+#changelist .actions label {
+    font-size: 11px;
+    margin: 0 0.5em;
+}
+
+#changelist #action-toggle {
+    display: none;
+}
+
+/* ACTIONS GROUP */
+#changelist .toolbar-features {
+    height: 2.5em;
+    margin-bottom:10px;
+    overflow:hidden;
+    zoom:1;
+}
+
+#changelist .toolbar-features button {
+    background: url(/media/img/botoes.png) no-repeat 0 0;
+    border:0;
+    height:29px;
+    display:block;
+    position:absolute;
+    text-indent:-9999px;
+    z-index:1001;
+}
+
+#changelist .toolbar-features button.actions-content {
+    background-position:-20px -830px;    
+    float:left;
+    width:125px;    
+}
+
+#changelist .toolbar-features button.actions-content:hover {
+    background-position:-153px -830px;
+    left:0;
+}
+
+#changelist .toolbar-features button.actions-content-clicked {
+    background-position:-289px -830px !important;
+}
+
+#changelist .toolbar-features button.filters {
+    background-position:-20px -786px;    
+    right:0;
+    width:112px;   
+}
+
+#changelist .toolbar-features .filters:hover {
+    background-position:-147px -786px;
+}
+
+#changelist .toolbar-features button.filters-clicked {
+    background-position:-274px -786px !important;
+}
+
+/* ACTIONS LIST */
+
+.actions ul {
+    margin-left:10px !important;
+    padding-left:0 !important;;
+}
+
+.actions ul li {
+    list-style-type:none;
+    margin-left:0;
+    padding:0 0 2px 0;
+}
+
+.actions ul li.selected {
+    border-left: 5px solid #ccc;
+    padding-left: 5px;
+    margin-left: -10px;
+}
+
+.actions a {
+    color:#999;
+}
+
+.actions a:hover {
+    color:#338CF2;
+}
+

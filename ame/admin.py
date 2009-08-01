@@ -15,9 +15,10 @@ class PacienteAdmin(admin.ModelAdmin):
         ),
         (u'Endereco',
            {'fields': ('endereco', 'complemento', 'bairro', 'municipio', 'pais', 'estado', 'cep', 'telefone', 'celular'), 
-            'classes': ['collapse']}
+            }
         ),
      )
+#    'classes': ['collapse']
     def formfield_for_foreignkey(self, db_field, request, **kwargs):
         if db_field.name == "estado":
             import pdb; pdb.set_trace()
