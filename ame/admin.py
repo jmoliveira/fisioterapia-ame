@@ -34,12 +34,6 @@ class PacienteAdmin(admin.ModelAdmin):
 #            self.form = game_form_factory(obj.season.sport)
         return super(PacienteAdmin, self).get_form(request, obj, **kwargs)    
 #    'classes': ['collapse']
-#    def formfield_for_foreignkey(self, db_field, request, **kwargs):
-#        if db_field.name == "estado":
-#            #import pdb; pdb.set_trace()
-#            kwargs["queryset"] = Estado.objects.filter(pais__id="1")
-#            return db_field.formfield(**kwargs)
-#        return super(PacienteAdmin, self).formfield_for_foreignkey(db_field, request, **kwargs)
     
 class EstadoAdmin(admin.ModelAdmin):
     list_display = ('nome','pais')
