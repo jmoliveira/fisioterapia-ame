@@ -8,7 +8,7 @@ from ame.models import Paciente, Estado, Pais
 
 
 class PacienteForm(ModelForm):
-    estado = ModelChoiceField(queryset=Estado.objects.none(), empty_label="Selecione o pais")
+    estado = ModelChoiceField(queryset=Estado.objects.none(), empty_label="Selecione o estado")
     
     class Meta:
         model = Paciente

@@ -18,13 +18,28 @@ class PacienteAdmin(admin.ModelAdmin):
             }
         ),
      )
+    
+    def get_form(self, request, obj=None, **kwargs):
+#        import pdb; pdb.set_trace()
+        if obj is not None:
+            if request.POST.has_key("pais") and not request.POST.get("pais", None):
+                self.form.base_fields['estado'].queryset = Estado.objects.filter(pais=request.POST.get("pais"))
+                self.form.base_fields['estado'].choices.queryset = self.form.base_fields['estado'].queryset
+                self.form.base_fields['estado'].widget.queryset = self.form.base_fields['estado'].queryset
+            else:
+                self.form.base_fields['estado'].queryset = Estado.objects.filter(pais=obj.pais)
+#                self.form.base_fields['estado'].choices.queryset = self.form.base_fields['estado'].queryset
+#                self.form.base_fields['estado'].widget.queryset = self.form.base_fields['estado'].queryset
+                
+#            self.form = game_form_factory(obj.season.sport)
+        return super(PacienteAdmin, self).get_form(request, obj, **kwargs)    
 #    'classes': ['collapse']
-    def formfield_for_foreignkey(self, db_field, request, **kwargs):
-        if db_field.name == "estado":
-            import pdb; pdb.set_trace()
-            kwargs["queryset"] = Estado.objects.filter(pais__id="1")
-            return db_field.formfield(**kwargs)
-        return super(PacienteAdmin, self).formfield_for_foreignkey(db_field, request, **kwargs)
+#    def formfield_for_foreignkey(self, db_field, request, **kwargs):
+#        if db_field.name == "estado":
+#            #import pdb; pdb.set_trace()
+#            kwargs["queryset"] = Estado.objects.filter(pais__id="1")
+#            return db_field.formfield(**kwargs)
+#        return super(PacienteAdmin, self).formfield_for_foreignkey(db_field, request, **kwargs)
     
 class EstadoAdmin(admin.ModelAdmin):
     list_display = ('nome','pais')
