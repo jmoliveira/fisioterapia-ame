@@ -1,0 +1,126 @@
+SQL_UP = """
+CREATE TABLE auth_group (
+  id int(11) NOT NULL auto_increment,
+  name varchar(80) NOT NULL,
+  PRIMARY KEY  (id),
+  UNIQUE KEY name (name)
+);
+
+CREATE TABLE auth_group_permissions (
+  id int(11) NOT NULL auto_increment,
+  group_id int(11) NOT NULL,
+  permission_id int(11) NOT NULL,
+  PRIMARY KEY  (id),
+  UNIQUE KEY group_id (group_id,permission_id),
+  KEY permission_id_refs_id_5886d21f (permission_id)
+);
+
+CREATE TABLE auth_message (
+  id int(11) NOT NULL auto_increment,
+  user_id int(11) NOT NULL,
+  message longtext NOT NULL,
+  PRIMARY KEY  (id),
+  KEY auth_message_user_id (user_id)
+);
+
+CREATE TABLE auth_permission (
+  id int(11) NOT NULL auto_increment,
+  name varchar(50) NOT NULL,
+  content_type_id int(11) NOT NULL,
+  codename varchar(100) NOT NULL,
+  PRIMARY KEY  (id),
+  UNIQUE KEY content_type_id (content_type_id,codename),
+  KEY auth_permission_content_type_id (content_type_id)
+);
+
+CREATE TABLE auth_user (
+  id int(11) NOT NULL auto_increment,
+  username varchar(30) NOT NULL,
+  first_name varchar(30) NOT NULL,
+  last_name varchar(30) NOT NULL,
+  email varchar(75) NOT NULL,
+  password varchar(128) NOT NULL,
+  is_staff tinyint(1) NOT NULL,
+  is_active tinyint(1) NOT NULL,
+  is_superuser tinyint(1) NOT NULL,
+  last_login datetime NOT NULL,
+  date_joined datetime NOT NULL,
+  PRIMARY KEY  (id),
+  UNIQUE KEY username (username)
+);
+
+INSERT INTO auth_user VALUES (1,'admin','','','admin@foo.com','sha1$b8edc$30820839255e22009e5fb905c4f3fafd2de7de8d',1,1,1,'2009-03-25 18:11:43','2009-03-25 18:11:43');
+
+CREATE TABLE auth_user_groups (
+  id int(11) NOT NULL auto_increment,
+  user_id int(11) NOT NULL,
+  group_id int(11) NOT NULL,
+  PRIMARY KEY  (id),
+  UNIQUE KEY user_id (user_id,group_id),
+  KEY group_id_refs_id_f116770 (group_id)
+);
+
+CREATE TABLE auth_user_user_permissions (
+  id int(11) NOT NULL auto_increment,
+  user_id int(11) NOT NULL,
+  permission_id int(11) NOT NULL,
+  PRIMARY KEY  (id),
+  UNIQUE KEY user_id (user_id,permission_id),
+  KEY permission_id_refs_id_67e79cb (permission_id)
+);
+
+CREATE TABLE django_admin_log (
+  id int(11) NOT NULL auto_increment,
+  action_time datetime NOT NULL,
+  user_id int(11) NOT NULL,
+  content_type_id int(11) default NULL,
+  object_id longtext,
+  object_repr varchar(200) NOT NULL,
+  action_flag smallint(5) unsigned NOT NULL,
+  change_message longtext NOT NULL,
+  PRIMARY KEY  (id),
+  KEY django_admin_log_user_id (user_id),
+  KEY django_admin_log_content_type_id (content_type_id)
+);
+
+CREATE TABLE django_content_type (
+  id int(11) NOT NULL auto_increment,
+  name varchar(100) NOT NULL,
+  app_label varchar(100) NOT NULL,
+  model varchar(100) NOT NULL,
+  PRIMARY KEY  (id),
+  UNIQUE KEY app_label (app_label,model)
+);
+
+INSERT INTO django_content_type VALUES (1,'log entry','admin','logentry'),(2,'permission','auth','permission'),(3,'group','auth','group'),(4,'user','auth','user'),(5,'message','auth','message'),(6,'content type','contenttypes','contenttype'),(7,'session','sessions','session'),(8,'site','sites','site'),(9,'materia','materia','materia');
+
+CREATE TABLE django_session (
+  session_key varchar(40) NOT NULL,
+  session_data longtext NOT NULL,
+  expire_date datetime NOT NULL,
+  PRIMARY KEY  (session_key)
+);
+
+CREATE TABLE django_site (
+  id int(11) NOT NULL auto_increment,
+  domain varchar(100) NOT NULL,
+  name varchar(50) NOT NULL,
+  PRIMARY KEY  (id)
+);
+
+INSERT INTO django_site VALUES (1,'example.com','example.com');
+"""
+
+SQL_DOWN = """
+DROP TABLE auth_group;
+DROP TABLE auth_group_permissions;
+DROP TABLE auth_message;
+DROP TABLE auth_permission;
+DROP TABLE auth_user;
+DROP TABLE auth_user_groups;
+DROP TABLE auth_user_user_permissions;
+DROP TABLE django_admin_log;
+DROP TABLE django_content_type;
+DROP TABLE django_session;
+DROP TABLE django_site;
+"""

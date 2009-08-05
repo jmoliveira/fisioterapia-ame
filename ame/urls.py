@@ -4,6 +4,6 @@ from ame.views import estados
 
 urlpatterns = patterns('',
     # autocomplete de equipes
-    (r'estados$', estados),
+    #(r'estados$', estados),
 )
 

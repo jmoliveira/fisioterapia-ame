@@ -1,0 +1,37 @@
+SQL_UP = """
+CREATE TABLE tb_ame_paciente (
+  paciente_id int(11) NOT NULL auto_increment,
+  nome varchar(50) default NULL,
+  sexo varchar(1) NOT NULL,
+  data_nascimento date default NULL,
+  email varchar(100) default NULL,
+  endereco varchar(255) default NULL,
+  complemento varchar(255) default NULL,
+  bairro varchar(150) default NULL,
+  municipio varchar(200) default NULL,
+  pais_id int(11) NOT NULL,
+  estado_id int(11) NOT NULL,
+  cep varchar(10) default NULL,
+  telefone varchar(15) default NULL,
+  celular varchar(15) default NULL,
+  PRIMARY KEY  (paciente_id),
+  KEY  FK_PACIENTE_ESTADO  ( estado_id ),
+  CONSTRAINT FK_PACIENTE_ESTADO FOREIGN KEY (estado_id) REFERENCES tb_ame_estado (estado_id)
+)
+ENGINE = MyISAM 
+CHARSET = utf8;
+
+CREATE TABLE tb_ame_estado (
+  estado_id int(11) NOT NULL auto_increment,
+  nome varchar(70) default NULL,
+  uf varchar(2) default NULL,
+  PRIMARY KEY  (estado_id)
+)
+ENGINE = MyISAM 
+CHARSET = utf8;
+"""
+
+SQL_DOWN = """
+DROP TABLE tb_ame_paciente;
+DROP TABLE tb_ame_estado;
+"""
